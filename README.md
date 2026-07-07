@@ -58,23 +58,11 @@ The purpose of this project was to gain hands-on experience with ticket intake, 
 
 Logged into the osTicket Admin/Agent panel using the agent accounts created during the post-installation configuration lab.
 
-Admin/Analyst Login Page:
-
-```text
-http://localhost/osTicket/scp/login.php
-```
-
 ![Admin agent login](images/step-1-admin-agent-login.png)
 
 ### Step 2: Access the osTicket End-User Portal
 
 Accessed the osTicket end-user portal to create support tickets from the customer side of the help desk system.
-
-End-User osTicket URL:
-
-```text
-http://localhost/osTicket
-```
 
 ![End user portal](images/step-2-end-user-portal.png)
 
