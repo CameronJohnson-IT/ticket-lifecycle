@@ -1,49 +1,252 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+# osTicket Ticket Lifecycle Examples
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
+![osTicket Ticket Lifecycle Examples](images/ticket-lifecycle-header.png)
 
-<h2>Environments and Technologies Used</h2>
+## Project Summary
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+This project demonstrates ticket lifecycle examples within the osTicket help desk system. After completing the osTicket installation and post-installation configuration labs, I created support tickets as end users, reviewed and updated ticket properties as help desk agents, assigned tickets to the correct departments, applied SLA plans, and worked tickets through completion.
+
+The purpose of this project was to gain hands-on experience with ticket intake, ticket triage, priority assignment, department routing, SLA management, agent permissions, and ticket resolution workflows in a help desk environment.
+
+## Related osTicket Projects
+
+- [osTicket: Prerequisites and Installation](https://github.com/CameronJohnson-IT/osticket-prereqs)
+- [osTicket: Post-Installation Configuration](https://github.com/CameronJohnson-IT/post-install-config)
+- [osTicket: Ticket Lifecycle Examples](https://github.com/CameronJohnson-IT/ticket-lifecycle)
+
+## Technologies Used
+
+- osTicket
+- Microsoft Azure
+- Azure Virtual Machines
+- Remote Desktop Protocol
 - Internet Information Services (IIS)
+- PHP
+- MySQL
+- Web-based ticketing system
 
-<h2>Operating Systems Used </h2>
+## Languages / Components Used
 
-- Windows 10</b> (21H2)
+- PHP
+- SQL / MySQL
+- osTicket web application
+- IIS web server components
+- Web-based admin and agent interfaces
 
-<h2>Ticket Lifecycle Stages</h2>
+## Environments Used
 
-- Intake
-- Assignment and Communication
-- Working the Issue
-- Resolution
+- Microsoft Azure
+- Windows 10 Virtual Machine
+- osTicket Admin Panel
+- osTicket Agent Panel
+- osTicket End-User Portal
 
-<h2>Lifecycle Stages</h2>
+## Project Objectives
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+- Create support tickets as end users
+- Observe ticket properties as help desk agents
+- Configure ticket priority, department, SLA, and assignment
+- Route tickets to the correct departments
+- Work tickets through completion
+- Understand ticket visibility and access permissions
+- Practice real-world help desk ticket handling
+- Explain how ticket intake works in a technical support environment
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+## Implementation Steps
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### Step 1: Access the osTicket Admin/Agent Panel
+
+Logged into the osTicket Admin/Agent panel using the agent accounts created during the post-installation configuration lab.
+
+Admin/Analyst Login Page:
+
+```text
+http://localhost/osTicket/scp/login.php
+```
+
+![Admin agent login](images/step-1-admin-agent-login.png)
+
+### Step 2: Access the osTicket End-User Portal
+
+Accessed the osTicket end-user portal to create support tickets from the customer side of the help desk system.
+
+End-User osTicket URL:
+
+```text
+http://localhost/osTicket
+```
+
+![End user portal](images/step-2-end-user-portal.png)
+
+### Step 3: Prepare Departments for Ticket Routing
+
+Updated the department structure before working ticket examples. The `SysAdmins` department was changed to a top-level department, and the `Maintenance` department was deleted instead of archived.
+
+![Department configuration](images/step-3-department-configuration.png)
+
+### Step 4: Create Ticket 1 - Mobile Banking System Down
+
+Created a ticket as an end user with the issue:
+
+```text
+entire mobile/online banking system is down
+```
+
+This ticket represents a high-impact service outage that would require urgent attention.
+
+![Create ticket mobile banking](images/step-4-create-ticket-mobile-banking.png)
+
+### Step 5: Observe Ticket 1 as John
+
+Logged in as the help desk agent `John` and observed the ticket properties, including priority, department, SLA, and assignment.
+
+![Observe ticket as John](images/step-5-observe-ticket-john.png)
+
+### Step 6: Set Ticket 1 Properties
+
+Updated the ticket properties for the mobile banking outage.
+
+Configured properties:
+
+- SLA: Sev-A, 1 hour, 24/7
+- Department: Online Banking
+
+![Set ticket 1 properties](images/step-6-set-ticket-1-properties.png)
+
+### Step 7: Test Ticket 1 Visibility
+
+Attempted to observe the ticket again as `John` after it was assigned to the Online Banking department. This demonstrated how department routing and permissions can affect ticket visibility.
+
+![Ticket visibility test](images/step-7-ticket-visibility-test.png)
+
+### Step 8: Work Ticket 1 to Completion as Jane
+
+Logged in as `Jane` and worked the mobile banking outage ticket through completion.
+
+![Complete ticket 1 as Jane](images/step-8-complete-ticket-1-jane.png)
+
+### Step 9: Create Ticket 2 - Adobe Upgrade Issue
+
+Created a second ticket as an end user with the issue:
+
+```text
+accounting department needs adobe upgrade, broken
+```
+
+This ticket represents a software/application support issue affecting a business department.
+
+![Create ticket adobe issue](images/step-9-create-ticket-adobe-issue.png)
+
+### Step 10: Observe Ticket 2 as John
+
+Logged in as `John` and observed the ticket properties for the Adobe upgrade issue, including priority, department, SLA, and assignment.
+
+![Observe ticket 2 as John](images/step-10-observe-ticket-2-john.png)
+
+### Step 11: Set Ticket 2 Properties
+
+Updated the ticket properties for the Adobe upgrade issue.
+
+Configured properties:
+
+- SLA: Sev-B, 4 hours, 24/7
+- Department: Support
+
+![Set ticket 2 properties](images/step-11-set-ticket-2-properties.png)
+
+### Step 12: Work Ticket 2 to Completion as John
+
+Worked the Adobe upgrade ticket through completion as `John`.
+
+![Complete ticket 2 as John](images/step-12-complete-ticket-2-john.png)
+
+### Step 13: Create Ticket 3 - CFO Laptop Issue
+
+Created a third ticket as an end user with the issue:
+
+```text
+CFO's laptop will no longer turn on
+```
+
+This ticket represents a hardware or endpoint support issue involving an important user.
+
+![Create ticket CFO laptop](images/step-13-create-ticket-cfo-laptop.png)
+
+### Step 14: Observe Ticket 3 as John
+
+Logged in as `John` and observed the ticket properties for the CFO laptop issue, including priority, department, SLA, and assignment.
+
+![Observe ticket 3 as John](images/step-14-observe-ticket-3-john.png)
+
+### Step 15: Set Ticket 3 Properties
+
+Updated the ticket properties for the CFO laptop issue.
+
+Configured properties:
+
+- SLA: Sev-B, 4 hours, 24/7
+- Department: Support
+
+![Set ticket 3 properties](images/step-15-set-ticket-3-properties.png)
+
+### Step 16: Work Ticket 3 to Completion as John
+
+Worked the CFO laptop ticket through completion as `John`.
+
+![Complete ticket 3 as John](images/step-16-complete-ticket-3-john.png)
+
+### Step 17: Test Ticket Access and Escalation
+
+Changed ticket properties to test access behavior. The ticket was assigned a high severity SLA and moved to the `SysAdmins` department, which made it inaccessible from the previous agent view.
+
+Configured properties:
+
+- SLA: Sev-A
+- Department: SysAdmins
+
+![Ticket escalation access test](images/step-17-ticket-escalation-access-test.png)
+
+### Step 18: Assign Access Through the Admin Panel
+
+Switched to the Admin Panel and assigned access to the `SysAdmins` department. This allowed the ticket to become visible again to the appropriate agent or department.
+
+![Assign access sysadmins](images/step-18-assign-access-sysadmins.png)
+
+### Step 19: Complete the Escalated Ticket
+
+Switched back to the Agent Panel and completed the escalated ticket. After completion, I observed that changes could no longer be made to the closed ticket.
+
+![Complete escalated ticket](images/step-19-complete-escalated-ticket.png)
+
+## Demonstration
+
+This project demonstrates how tickets move through a help desk system from creation to resolution. Tickets were created through the end-user portal, reviewed from the agent side, assigned ticket properties, routed to the correct departments, and worked through completion.
+
+The lab also demonstrated how departments, agent permissions, SLA plans, and ticket assignments affect visibility and responsibility inside osTicket.
+
+![Ticket lifecycle demonstration](images/demonstration-ticket-lifecycle.png)
+
+## Ticket Intake Explanation
+
+In real help desk environments, tickets can be created through several intake channels, including email, phone, chat, web forms, or direct interaction with a user. Even when an issue is fixed immediately, creating a ticket is still important because it documents the work performed, tracks recurring problems, helps measure support workload, and creates a record for future troubleshooting.
+
+Ticketing systems help support teams organize requests, prioritize urgent issues, assign work to the right people, and maintain accountability throughout the support process.
+
+## Skills Demonstrated
+
+- Help desk ticket intake
+- Ticket triage and prioritization
+- SLA assignment
+- Department routing
+- Agent ticket management
+- Ticket visibility and permission testing
+- End-user support workflow
+- Ticket resolution documentation
+- Help desk operations
+- Technical documentation
+
+## Key Takeaways
+
+This project helped me understand the full lifecycle of a support ticket, from user submission to agent review, triage, routing, escalation, and resolution. I learned how ticket properties such as priority, department, SLA, and assignment affect how work is handled inside a help desk system.
+
+It also reinforced the importance of documenting support work in a ticketing system, even when an issue is resolved quickly. Tickets provide visibility, accountability, metrics, and a reliable history of technical support activity.
