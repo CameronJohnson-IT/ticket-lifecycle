@@ -178,8 +178,11 @@ Updated the ticket properties for the CFO laptop issue.
 
 Configured properties:
 
+- Priority: High
 - SLA: Sev-B, 4 hours, 24/7
 - Department: Support
+- Help Topic: Personal Computer Issues
+- Assigned To: `John Doe`
 
 ![Set ticket 3 properties](images/step-15-set-ticket-3-properties.png)
 
