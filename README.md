@@ -106,7 +106,7 @@ Configured properties:
 
 ### Step 7: Test Ticket 1 Visibility
 
-Attempted to observe the ticket again as `John` after it was assigned to the Online Banking department. This demonstrated how department routing and permissions can affect ticket visibility.
+Attempted to observe the ticket again as `John` after it was assigned to the Support / SysAdmins department. This demonstrated how department routing and permissions can affect ticket visibility.
 
 ![Ticket visibility test](images/step-7-ticket-visibility-test.png)
 
