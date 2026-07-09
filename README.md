@@ -154,17 +154,17 @@ Worked the Adobe upgrade ticket through completion as `John`.
 
 ![Complete ticket 2 as John](images/step-12-complete-ticket-2-john.png)
 
-### Step 13: Create Ticket 3 - CFO Laptop Issue
+### Step 13: Create Ticket 3 - Marketing Laptop Display Issue
 
 Created a third ticket as an end user with the issue:
 
 ```text
-Sarah's (CFO) comptuer keeps freezing and flickering
+Sarah's comptuer keeps freezing and flickering
 ```
 
-This ticket represents a hardware or endpoint support issue involving an important user.
+This ticket represents a hardware or endpoint support issue affecting a business user.
 
-![Create ticket CFO laptop](images/step-13-create-ticket-cfo-laptop.png)
+![Create ticket - Laptop Display Issue](images/step-13-create-ticket-cfo-laptop.png)
 
 ### Step 14: Observe Ticket 3 as John
 
