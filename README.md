@@ -96,8 +96,11 @@ Updated the ticket properties for the mobile banking outage.
 
 Configured properties:
 
+- Priority: Emergency
 - SLA: Sev-A, 1 hour, 24/7
-- Department: Online Banking
+- Department: Support / SysAdmins
+- Help Topic: Business Critical Outage
+- Assigned To: `Jane Doe`
 
 ![Set ticket 1 properties](images/step-6-set-ticket-1-properties.png)
 
