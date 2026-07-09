@@ -159,7 +159,7 @@ Worked the Adobe upgrade ticket through completion as `John`.
 Created a third ticket as an end user with the issue:
 
 ```text
-CFO's laptop will no longer turn on
+Sarah's (CFO) comptuer keeps freezing and flickering
 ```
 
 This ticket represents a hardware or endpoint support issue involving an important user.
