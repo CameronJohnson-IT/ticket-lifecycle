@@ -140,8 +140,11 @@ Updated the ticket properties for the Adobe upgrade issue.
 
 Configured properties:
 
+- Priority: High
 - SLA: Sev-B, 4 hours, 24/7
 - Department: Support
+- Assigned To: `John Doe`
+- Help Topic: Personal Computer Issues
 
 ![Set ticket 2 properties](images/step-11-set-ticket-2-properties.png)
 
