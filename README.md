@@ -192,28 +192,6 @@ Worked the CFO laptop ticket through completion as `John`.
 
 ![Complete ticket 3 as John](images/step-16-complete-ticket-3-john.png)
 
-### Step 17: Test Ticket Access and Escalation
-
-Changed ticket properties to test access behavior. The ticket was assigned a high severity SLA and moved to the `SysAdmins` department, which made it inaccessible from the previous agent view.
-
-Configured properties:
-
-- SLA: Sev-A
-- Department: SysAdmins
-
-![Ticket escalation access test](images/step-17-ticket-escalation-access-test.png)
-
-### Step 18: Assign Access Through the Admin Panel
-
-Switched to the Admin Panel and assigned access to the `SysAdmins` department. This allowed the ticket to become visible again to the appropriate agent or department.
-
-![Assign access sysadmins](images/step-18-assign-access-sysadmins.png)
-
-### Step 19: Complete the Escalated Ticket
-
-Switched back to the Agent Panel and completed the escalated ticket. After completion, I observed that changes could no longer be made to the closed ticket.
-
-![Complete escalated ticket](images/step-19-complete-escalated-ticket.png)
 
 ## Demonstration
 
